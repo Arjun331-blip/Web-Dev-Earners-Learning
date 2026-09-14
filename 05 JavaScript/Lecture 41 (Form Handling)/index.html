@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event and Input validation with DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello Dosto</h1>
+
+    <form action="" id="form">
+        <div>
+            <label for="name">Name : </label>
+            <input type="text" id="name" placeholder="enter your name..." value=""> <br>
+            <span class="errorMessage"></span>
+        </div>
+        <div>
+            <label for="email">Email : </label>
+            <input type="text" id="email" placeholder="enter your email...">
+            <span class="errorMessage"></span>
+        </div>
+        <div>
+            <label for="password">password : </label>
+            <input type="text" id="password" placeholder="enter your password...">
+            <p id="passwordHint" class="hidden">must be at least 8 character</p>
+            <span class="errorMessage"></span>
+        </div>
+
+        <div>
+            <label for="bio">Bio : </label>
+            <textarea type="text" id="bio" placeholder="enter your bio..." maxlength="150"></textarea> <br>
+            <span id="wordLimit">150 letters remaining</span>
+            <span class="errorMessage"></span>
+        </div>
+        <div>
+            <label for="country">Select your country: </label>
+            <select name="country" id="country">
+                <option value="">-- select your country --</option>
+                <option value="India">INDIA</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">I agree to the term and policy</label>
+        </div>
+        <button id="btn" type="submit">Create Account</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html
