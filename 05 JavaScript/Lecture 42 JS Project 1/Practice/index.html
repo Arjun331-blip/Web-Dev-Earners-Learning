@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make TODO Itself</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+    <main class="max-w-md bg-slate-300 p-3 mx-auto mt-2">
+        <section class="bg-indigo-500 rounded-t-sm pl-2">
+            <h1 class="font-semibold text-xl text-gray-800">To do App</h1>
+        </section>
+        
+        <form action="" class="flex justify-between gap-2 mt-2" id="actionForm">
+            <input type="text" name="" id="inputTask" placeholder="Enter your todo task description..." class="flex-1 border border-green-900 outline-none rounded-sm px-2 py-1">
+            <button id="addTaskBtn" class="text-white py-1 px-4 bg-violet-600 rounded-md font-semibold" >Add</button>
+        </form>
+
+        <section class="flex justify-between">
+            <span class="text-red-600 text-sm self-center flex-1" id="errorInput"></span>
+            <button id="cancelEdit" class="font-medium text-gray-500 text-sm underline underline-offset-2 self-end"></button>
+        </section>
+
+        <section class="mt-2 flex justify-between py-1">
+            <span class="text-gray-500 uppercase font-semibold text-sm" id="taskCount">Task : (0)</span>
+            <span class="text-gray-500 uppercase font-semibold text-sm" id="CompleteCount">Completed : 0</span>
+        </section>
+
+        <section class="mt-2 flex flex-col gap-2" id="displayTodoTask">
+            <!-- <div class="flex gap-2 justify-between align-middle border rounded-sm px-2 py-1">
+                <input type="checkbox" name="" id="" class="w-3 h-3 self-center">
+                <p class="flex-1 text-gray-500 text-sm self-center text-nowrap">Take Class</p>
+                <button class="text-amber-600 self-center hover:bg-amber-200 px-3 rounded-sm duration-300 ease-linear">Edit</button>
+                <button class="text-red-600 self-center hover:bg-red-200 px-3 rounded-sm duration-300 ease-linear">Delete</button>
+            </div> -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

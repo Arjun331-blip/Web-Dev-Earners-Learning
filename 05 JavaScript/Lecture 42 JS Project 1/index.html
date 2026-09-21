@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class=" bg-slate-200">
+    
+    <div class="mt-2 max-w-md mx-auto bg-gray-100">
+        <div class="bg-indigo-500 rounded-t-xl px-3 py-1.5">
+            <h1 class="text-xl font-semibold ">Todo App</h1>
+        </div>
+        <div class="px-3 py-1.5 flex flex-col">
+            <form action="" class="flex justify-between mt-2 gap-2" id="todoForm">
+                <input type="text" id="todoInput" placeholder="Enter your task description" class="border-blue-950 border-1 outline-blue-600 flex-1 py-1 px-3 rounded-sm">
+                <button id="formBtn" class="bg-violet-500 py-1 px-5 tex-gray-400 font-semibold rounded-md text-white">Add</button>
+            </form>
+            <button id="cancelEdit" class="self-end inline-block pr-3 underline underline-offset-2 text-gray-400"></button>
+            <div class="flex justify-between mt-2 text-gray-400">
+                <span class="text-md font-semibold uppercase" id="taskCount">Tasks : 0</span>
+                <span class="text-md font-semibold uppercase" id="completeCount">completed : 0</span>
+            </div>
+
+            <ul id="todoList" class="mt-2">
+                <!-- <div class="flex justify-between px-2 border border-gray-400 rounded-md py-1">
+                    <div class="flex gap-3 flex-1">
+                        <input type="checkbox" name="" id="">
+                        <p>go to gym</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <button class="text-amber-600 font-semibold text-md py-0.5 px-3 hover:bg-amber-200 transition-all duration-400 rounded-sm">Edit</button>
+                        <button class="text-red-600 font-semibold text-md py-0.5 px-3 hover:bg-red-200 transition-all duration-400 rounded-sm">Delete</button>
+                    </div>
+                </div> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
